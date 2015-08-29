@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   root 'schools#index'
 
   resources :schools, only: [:index, :show] do
-    resources :courses, only: [:index, :show]
+    resources :courses, only: [:index, :show] do
+      resources :posts, only: [:index, :new, :destroy]
+    end
   end
 
   resources :teachers
