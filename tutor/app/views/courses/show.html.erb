@@ -3,3 +3,4 @@
 
 <%= @course.school.name %> <br>
 <%= @course.name %>
+<%= link_to "New Tutor Listing", new_school_course_post_path(@course.school_id, @course.id) %>

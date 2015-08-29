@@ -1,0 +1,8 @@
+<%= form_for @post, url: school_course_posts_path(@course.school_id, @course.id), method: :post do |f| %>
+  Name: <%= f.text_field :name %><br />
+  Contact Email: <%= f.text_field :email %><br />
+  Description: <%= f.text_field :info %><br />
+  Facebook Link: <%= f.text_field :social_media %><br />
+  <%= f.hidden_field :course_id, :value => @course.id %> <br>
+  <%= f.submit "Submit" %>
+<% end %>
