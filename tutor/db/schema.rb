@@ -23,10 +23,11 @@ ActiveRecord::Schema.define(version: 20150829192633) do
   create_table "posts", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
+    t.string   "social_media"
     t.text     "info"
     t.integer  "course_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "schools", force: :cascade do |t|
