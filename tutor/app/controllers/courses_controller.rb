@@ -1,8 +1,9 @@
 class CoursesController < ApplicationController
   def index
-    @courses = Course.find_by(params[:school_id])
+    @courses = Course.where(params[:school_id])
   end
 
   def show
+    @course = Course.find_by(params[:id])
   end
 end

@@ -3,5 +3,5 @@
 
 <h1>Select a school</h1>
 <% @schools.each do |school| %>
-  <%= link_to school.name, school_path(school.id) %> <br>
+  <%= link_to school.name, school_courses_path(school.id) %> <br>
 <% end %>
