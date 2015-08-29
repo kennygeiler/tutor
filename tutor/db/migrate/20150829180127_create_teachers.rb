@@ -3,7 +3,7 @@ class CreateTeachers < ActiveRecord::Migration
     create_table :teachers do |t|
       t.string :name
       t.string :email
-      t.references :school
+      t.integer :school_id
       t.timestamps null: false
     end
   end
