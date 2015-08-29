@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 School.create(name: "Washu")
+Course.create(name: "cse123", school_id: 1)
+Course.create(name: "cse1234", school_id: 1)
